@@ -1,5 +1,5 @@
 # pypulsar-rpc
-Python library to simplify sync RPC using Apache pulsar
+Python library for RPC over Apache Pulsar
 
 ## Usage example
 
