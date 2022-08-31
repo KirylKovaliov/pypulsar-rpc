@@ -3,9 +3,8 @@ from random import randint
 
 import pulsar
 
-from examples.model import SleepResponse, SleepRequest
+from examples.sleep_model import SleepResponse, SleepRequest
 from src import PulsarRpcClient, RpcCallTimeout
-
 
 class SleepPulsarRpcClient(PulsarRpcClient[SleepRequest, SleepResponse]):
     pass
@@ -14,8 +13,7 @@ class SleepPulsarRpcClient(PulsarRpcClient[SleepRequest, SleepResponse]):
 client = pulsar.Client('pulsar://localhost:6650')
 rpc_client = SleepPulsarRpcClient(topic_name="example_sleep", client=client)
 
-
-for i in range(0, 10):
+for i in range(0, 50000):
     start_time = time.time()
     sleep_for = randint(0, 2)
 

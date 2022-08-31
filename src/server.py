@@ -7,7 +7,7 @@ import pulsar
 from typing import TypeVar, Generic
 from abc import abstractmethod, ABCMeta
 from pydantic import BaseModel
-from .model import RpcRequest, RpcResponse
+from src.model import RpcRequest, RpcResponse
 
 TRequest = TypeVar('TRequest', bound=BaseModel)
 TResponse = TypeVar('TResponse', bound=BaseModel)

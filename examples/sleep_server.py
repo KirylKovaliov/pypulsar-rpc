@@ -2,7 +2,7 @@ from time import sleep
 
 import pulsar
 
-from examples.model import SleepRequest, SleepResponse
+from sleep_model import SleepRequest, SleepResponse
 from src import PulsarRpcServer
 
 

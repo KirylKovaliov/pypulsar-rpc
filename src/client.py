@@ -6,8 +6,8 @@ from typing import TypeVar, Generic
 
 from pydantic import BaseModel
 
-from .exceptions import RpcCallTimeout
-from .model import RpcRequest, RpcResponse
+from src.exceptions import RpcCallTimeout
+from src.model import RpcRequest, RpcResponse
 
 TRequest = TypeVar('TRequest', bound=BaseModel)
 TResponse = TypeVar('TResponse', bound=BaseModel)
